@@ -18,7 +18,7 @@ app.use('/work', work);
 
 var mongoose = require('mongoose');
 mongoose.Promise = require('bluebird');
-var dbUrlRemote = 'mongodb://noufalpp:Test1988@ds143451.mlab.com:43451/noufalppcom_db';
+var dbUrlRemote = "mongodb://127.0.0.1:27017/noufalppcom?retryWrites=false";
 //var dbUrlRemote = process.env.MONGODB_URI;  // uses for secure connection, heroku encrypts the uname and pwd
 var dbUrlLocal = 'mongodb://localhost:27017/noufalppcom';
 
