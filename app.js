@@ -23,23 +23,23 @@ var dbUrlRemote = "mongodb://127.0.0.1:27017/noufalppcom?retryWrites=false";
 var dbUrlLocal = 'mongodb://localhost:27017/noufalppcom';
 
 
-// // connecting local db
-// var connection = mongoose.connect(dbUrlLocal, { promiseLibrary: require('bluebird') });
-// connection
-//     .then(() => console.log('connection successfull'))
-//     .catch((err) => console.error(err));
-
-
-// connecting remote db
-var connection = mongoose.connect(dbUrlRemote, { useNewUrlParser: true });
+// connecting local db
+var connection = mongoose.connect(dbUrlLocal, { promiseLibrary: require('bluebird') });
 connection
-    .then((db) => {
-        console.log('connection successfull');
-    })
-    .catch((err) => {
-        console.log('Error on start: ' + err.stack);
-        process.exit(1);
-    });
+    .then(() => console.log('connection successfull'))
+    .catch((err) => console.error(err));
+
+
+// // connecting remote db
+// var connection = mongoose.connect(dbUrlRemote, { useNewUrlParser: true });
+// connection
+//     .then((db) => {
+//         console.log('connection successfull');
+//     })
+//     .catch((err) => {
+//         console.log('Error on start: ' + err.stack);
+//         process.exit(1);
+//     });
 
 
 // catch 404 and forward to error handler
