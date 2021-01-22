@@ -61,7 +61,6 @@
           "builder": "@angular-devkit/build-angular:dev-server",
           "options": {
             "browserTarget": "noufalppcom:build",
-            "port":3300
           },
           "configurations": {
             "production": {
