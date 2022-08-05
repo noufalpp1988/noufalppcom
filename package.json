@@ -32,7 +32,7 @@
         "font-awesome": "^4.7.0",
         "git": "^0.1.5",
         "jquery": "^3.3.1",
-        "mongoose": "^5.2.5",
+        "mongoose": "^5.7.5",
         "morgan": "^1.9.0",
         "nodemon": "^1.18.3",
         "rxjs": "^6.0.0",
